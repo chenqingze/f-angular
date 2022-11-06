@@ -1,0 +1,15 @@
+.mat-toolbar {
+  display: flex;
+  flex-direction: row;
+
+  .top-button-section {
+    margin-left: auto;
+  }
+
+  .mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+}

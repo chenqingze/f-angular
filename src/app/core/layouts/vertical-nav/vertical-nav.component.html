@@ -1,0 +1,17 @@
+<mat-list-item *ngIf="!navItem.children; else expandable" [routerLink]="navItem.path">
+    <mat-icon *ngIf="navItem.icon">{{navItem.icon}}</mat-icon>
+    <span>{{navItem.title}}</span>
+</mat-list-item>
+<ng-template #expandable>
+    <mat-expansion-panel [class.mat-elevation-z0]="true" dense>
+        <mat-expansion-panel-header>
+            <mat-icon *ngIf="navItem.icon">{{navItem.icon}}</mat-icon>
+            <span>{{navItem.title}}</span>
+        </mat-expansion-panel-header>
+        <mat-nav-list dense>
+            <app-vertical-nav *ngFor="let child of navItem.children" [navItem]="child"></app-vertical-nav>
+        </mat-nav-list>
+    </mat-expansion-panel>
+</ng-template>
+
+
