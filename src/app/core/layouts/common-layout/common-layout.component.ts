@@ -2,8 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {BreakpointObserver, Breakpoints} from "@angular/cdk/layout";
 import {Observable, shareReplay} from "rxjs";
 import {map} from "rxjs/operators";
-import {NavItem} from "../../../model/nav-item";
-import {menu} from "../../constants/menu";
+import {NavItem} from "../../../model/ui";
+import {menu} from "../../constants/ui-resources";
 
 @Component({
     selector: 'app-common-layout',

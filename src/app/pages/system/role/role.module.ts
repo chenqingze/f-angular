@@ -1,13 +1,19 @@
 import {NgModule} from '@angular/core';
 
 import {RoleRoutingModule} from './role-routing.module';
-import {RoleComponent} from './role.component';
 import {SharedModule} from "../../../shared/shared.module";
+import {DetailComponent} from './detail/detail.component';
+import {AddComponent} from './add/add.component';
+import {IndexComponent} from './index/index.component';
+import {EditComponent} from './edit/edit.component';
 
 
 @NgModule({
     declarations: [
-        RoleComponent
+        DetailComponent,
+        AddComponent,
+        IndexComponent,
+        EditComponent
     ],
     imports: [
         SharedModule,

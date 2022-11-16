@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {NavItem} from "../../../model/nav-item";
+import {NavItem} from "../../../model/ui";
 
 @Component({
     selector: 'app-vertical-nav',

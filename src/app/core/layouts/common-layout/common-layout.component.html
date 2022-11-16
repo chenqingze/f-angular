@@ -5,7 +5,7 @@
                  [mode]="(isHandset$ | async) ? 'over' : 'side'"
                  [opened]="(isHandset$ | async) === false">
         <mat-nav-list dense>
-            <!-- side menu list items-->
+            <!-- side ui list items-->
             <app-vertical-nav *ngFor="let navItem of menu" [navItem]="navItem"></app-vertical-nav>
         </mat-nav-list>
     </mat-sidenav>
