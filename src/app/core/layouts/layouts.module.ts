@@ -12,7 +12,7 @@ import {VerticalNavComponent} from "./vertical-nav/vertical-nav.component";
 import {NotFoundComponent} from "./not-found/not-found.component";
 import {BlankLayoutComponent} from './blank-layout/blank-layout.component';
 import {CommonLayoutComponent} from './common-layout/common-layout.component';
-import {RouterLink, RouterLinkWithHref, RouterOutlet} from "@angular/router";
+import {RouterLink, RouterOutlet} from "@angular/router";
 
 
 @NgModule({
@@ -34,7 +34,7 @@ import {RouterLink, RouterLinkWithHref, RouterOutlet} from "@angular/router";
         MatButtonModule,
         RouterOutlet,
         NgIf,
-        RouterLinkWithHref,
+        RouterLink,
         NgForOf,
         RouterLink,
     ]
